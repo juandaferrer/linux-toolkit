@@ -14,16 +14,21 @@ The goal of this repository is simple: solve real problems with practical script
 
 ## Current Projects
 
-### Linux Diagnostic Helper
+### ⚙️ SysDiag (Linux Diagnostic Helper)
+Un script robusto en Python para la recolección automatizada y selectiva de logs críticos del sistema. Diseñado para administración de servidores y ejecución no bloqueante mediante tareas programadas (`cron`).
 
-A small Python utility that collects useful Linux diagnostic information from commands such as:
+* **Filtrado Inteligente:** Captura únicamente eventos críticos (`-p 4` en `journalctl`, `--level=err,warn` en `dmesg` y `--failed` en `systemctl`).
+* **Modo Consolidado:** Si se ejecuta sin argumentos, genera un reporte completo de 50 líneas por módulo separados limpiamente.
 
-* `dmesg`
-* `journalctl`
-* `systemctl`
+#### Uso rápido:
+```bash
+# Reporte completo automatizado (50 líneas de cada uno)
+sudo python3 sysdiag.py
 
-The script validates user input, limits the available commands for safety, and saves the output to a log file for later inspection.
-
+# Diagnóstico selectivo con líneas personalizadas
+sudo python3 sysdiag.py dmesg 100
+sudo python3 sysdiag.py journalctl 20
+```
 ## Why this repository?
 
 I created this repository to document my learning journey while building tools that I can actually use in real environments.

@@ -20,7 +20,7 @@ y puede no funcionar correctamente en otros sistemas operativos.
 
 Dejame un comentario si tienes alguna pregunta o sugerencia sobre cómo mejorar este script. ¡Gracias por usarlo!
 
-Visita mi GitHub https://github.com/juandaferrer/IaCofFerrer para más scripts útiles, visita mi sitio web juandaferrer.xyz.
+Visita mi GitHub https://github.com/juandaferrer/linux-toolkit para más scripts útiles, visita mi sitio web juandaferrer.xyz.
 
 USA ESTE SCRIPT BAJO TU PROPIO RIESGO. NO ME HAGO RESPONSABLE DE NINGÚN DAÑO QUE PUEDA OCASIONAR EL USO DE ESTE SCRIPT.
 NO USAR PARA PROPÓSITOS MALICIOSOS, EL DE ARRIBA TE ESTA OBSERVANDO.

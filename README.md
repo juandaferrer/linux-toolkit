@@ -15,20 +15,34 @@ The goal of this repository is simple: solve real problems with practical script
 ## Current Projects
 
 ### ⚙️ SysDiag (Linux Diagnostic Helper)
-Un script robusto en Python para la recolección automatizada y selectiva de logs críticos del sistema. Diseñado para administración de servidores y ejecución no bloqueante mediante tareas programadas (`cron`).
+A robust Python script for automated, selective collection of critical system logs. Designed for server administration and non-blocking execution through scheduled tasks (`cron`).
 
-* **Filtrado Inteligente:** Captura únicamente eventos críticos (`-p 4` en `journalctl`, `--level=err,warn` en `dmesg` y `--failed` en `systemctl`).
-* **Modo Consolidado:** Si se ejecuta sin argumentos, genera un reporte completo de 50 líneas por módulo separados limpiamente.
+* **Smart Filtering:** Captures only critical events (`-p 4` in `journalctl`, `--level=err,warn` in `dmesg`, and `--failed` in `systemctl`).
+* **Consolidated Mode:** When run without arguments, it produces a complete report of 50 lines per module, separated cleanly.
 
-#### Uso rápido:
+#### Quick use:
 ```bash
-# Reporte completo automatizado (50 líneas de cada uno)
+# Automated full report (50 lines of each)
 sudo python3 sysdiag.py
 
-# Diagnóstico selectivo con líneas personalizadas
+# Selective diagnostics with custom line counts
 sudo python3 sysdiag.py dmesg 100
 sudo python3 sysdiag.py journalctl 20
 ```
+
+
+## 🌐 Personal Website & Portfolio
+
+Want to see my full profile, technical articles, and ongoing infrastructure experiments? 
+
+Check out my live portfolio at:
+👉 **[juandaferrer.xyz](https://juandaferrer.xyz)**
+
+*What you'll find there:*
+- 📑 Comprehensive resume and technical skill breakdown.
+- 🚀 Deep dives into my personal projects and lab setups.
+- 🐧 Linux system administration and automation insights.
+
 ## Why this repository?
 
 I created this repository to document my learning journey while building tools that I can actually use in real environments.
@@ -50,3 +64,4 @@ Always review any script before executing it on a production system. Some utilit
 ## Contributions
 
 Suggestions, improvements and constructive feedback are always welcome.
+
